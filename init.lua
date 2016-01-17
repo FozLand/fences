@@ -22,6 +22,7 @@ function fences.register_fence(name, texture, desc, craftitem, craftoutput, grou
 		inventory_image = fence_texture,
 		wield_image = fence_texture,
 		paramtype = "light",
+		sunlight_propagates = true,
 		is_ground_content = false,
 		selection_box = {
 			type = "fixed",
