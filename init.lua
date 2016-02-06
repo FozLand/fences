@@ -39,8 +39,8 @@ function fences.register_fence(name, texture, desc, craftitem, craftoutput, grou
 end
 
 
-fences.register_fence("wood", "default_wood.png", "Wooden Fence", "group:stick", 2,
-		{choppy=2, oddly_breakable_by_hand=2, flammable=2}, default.node_sound_wood_defaults())
+--fences.register_fence("wood", "default_wood.png", "Wooden Fence", "group:stick", 2,
+		--{choppy=2, oddly_breakable_by_hand=2, flammable=2}, default.node_sound_wood_defaults())
 fences.register_fence("cobble", "default_cobble.png", "Cobblestone Fence", "default:cobble", 4,
 		{cracky=3, stone=2}, default.node_sound_stone_defaults())
 fences.register_fence("desert_cobble", "default_desert_cobble.png", "Desert Cobblestone Fence", "default:desert_cobble", 4,
@@ -55,11 +55,11 @@ fences.register_fence("desert_stonebrick", "default_desert_stone_brick.png", "De
 		{cracky=2, stone=1}, default.node_sound_stone_defaults())
 
 
-core.register_craft({
-	type = "fuel",
-	recipe = "fences:wood",
-	burntime = 15,
-})
+--core.register_craft({
+	--type = "fuel",
+	--recipe = "fences:wood",
+	--burntime = 15,
+--})
 
 if core.get_modpath( 'moretrees' ) then
 	local morewood = {
