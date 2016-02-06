@@ -88,3 +88,5 @@ if core.get_modpath( 'moretrees' ) then
 end
 
 core.register_alias("default:fence_wood", "fences:wood")
+
+print("[fences] Loaded")
